@@ -1,0 +1,523 @@
+In this, we used a basic concept of C++ language like struct, If else, and Switch. This project is mainly important for newcomers and just started their university journey so this project will help you a lot. Use the code first Thanks Later! 😃
+
+For more consider the code below:
+
+
+
+#include<iostream>
+#include<iomanip>
+#include<conio.h>
+#include<string>
+using namespace std;
+struct Account_detail{
+    string Account_user_name;
+    int Account_no;
+
+};
+struct food_Delivery{
+
+string cash_on_delivery="Cash on delivery";
+    string Paid_by_credit="Paid by credit";
+    string paid_by_Easypaisa="Paid by Easypaisa Account";
+        Account_detail FD;
+};
+
+void burger_list( );
+void pizza_list();
+void milk_shakes(); 
+void Icecream_list();
+
+int main(){
+
+
+    food_Delivery F;
+    int choice;
+
+     
+do{
+
+        system("cls");
+        system("color  1");
+    
+    cout<<endl<<setw(65)<<" :)   The Legends J & K Cafe  :)"<<endl;
+    
+    cout<<endl<<setw(95)<<"WELLCOME TO OUR SITE !!! Hope Fully you will be Enjoyed our Fast Food Taste ~ ~ ~  "<<endl;
+    
+    cout<<endl<<setw(75)<<" ******************** Foods Menu ********************"<<endl<<endl<<endl;
+    
+    cout<<setw(44)<<" 1 . Varieties of Burgers "<<endl<<endl;
+    cout<<setw(44)<<" 2 . Varieties of PIZZAS  "<<endl<<endl;
+    cout<<setw(47)<<" 3 . Varieties of MILKSHAKES "<<endl<<endl;
+    cout<<setw(45)<<" 4 . Varieties of ICECREAM "<<endl<<endl;
+    cout<<setw(23)<<"      5 . Exit "<<endl<<endl;
+    cout<<setw(65)<<"******************************************************"<<endl<<endl;;
+
+    cout<<"Choice The food Which You want :  ";
+    cin>>choice;
+    cout<<endl;
+    if(choice==1){
+        int pay;
+            burger_list();
+                cout<<setw(44)<<"  PAYMENT METHODS "<<endl<<endl;
+            cout<<setw(44)<<" 1 . cash on delivery "<<endl<<endl;
+    cout<<setw(44)<<" 2 . Paid by credit "<<endl<<endl;
+    cout<<setw(47)<<" 3 . paid by Easypaisa "<<endl<<endl;
+    
+            cout<<"Enter payment Method : ";
+            
+            cin>>pay;
+            if(pay==1){
+            cout<< "\n The payment is in :  " <<F.cash_on_delivery<<endl;
+                    }
+                    else if(pay==2){
+                        
+                        
+                        cout<< "\n The payment is in :  " <<F.Paid_by_credit<<endl<<endl;
+                        
+                        cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                        
+                    }
+                    else if (pay==3){
+                        cout<< "\n The payment is in :  " <<F.paid_by_Easypaisa<<endl;
+                            cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                    } 
+                    else
+                    {
+                        cout<<" Invalid option  "<<endl;
+                           cout<<" Choose Correct One  "<<endl;
+        
+                    }
+            system("pause");
+                return main();
+    }
+    else if(choice==2){
+            int pay;
+            pizza_list();
+                cout<<setw(44)<<"  PAYMENT METHODS "<<endl<<endl;
+            cout<<setw(44)<<" 1 . cash on delivery "<<endl<<endl;
+    cout<<setw(44)<<" 2 . Paid by credit "<<endl<<endl;
+    cout<<setw(47)<<" 3 . paid by Easypaisa "<<endl<<endl;
+    
+            cout<<"Enter payment Method : ";
+            
+            cin>>pay;
+            if(pay==1){
+            cout<< "\n The payment is in :  " <<F.cash_on_delivery<<endl;
+                    }
+                    else if(pay==2){
+                        
+                        
+                        cout<< "\n The payment is in :  " <<F.Paid_by_credit<<endl<<endl;
+                        
+                        cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                        
+                    }
+                    else if (pay==3){
+                        cout<< "\n The payment is in :  " <<F.paid_by_Easypaisa<<endl;
+                            cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                    } 
+                    else
+                    {
+                        cout<<" Invalid option  "<<endl;
+                           cout<<" Choose Correct One  "<<endl;
+        
+                    }
+            system("pause");
+            return main();
+    }
+    else if(choice==3){
+            int pay;
+            milk_shakes();
+                cout<<setw(44)<<"  PAYMENT METHODS "<<endl<<endl;
+            cout<<setw(44)<<" 1 . cash on delivery "<<endl<<endl;
+    cout<<setw(44)<<" 2 . Paid by credit "<<endl<<endl;
+    cout<<setw(47)<<" 3 . paid by Easypaisa "<<endl<<endl;
+    
+            cout<<"Enter payment Method : ";
+            
+            cin>>pay;
+            if(pay==1){
+            cout<< "\n The payment is in :  " <<F.cash_on_delivery<<endl;
+                    }
+                    else if(pay==2){
+                        
+                        
+                        cout<< "\n The payment is in :  " <<F.Paid_by_credit<<endl<<endl;
+                        
+                        cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                        
+                    }
+                    else if (pay==3){
+                        cout<< "\n The payment is in :  " <<F.paid_by_Easypaisa<<endl;
+                            cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                    } 
+                    else
+                    {
+                        cout<<" Invalid option  "<<endl;
+                           cout<<" Choose Correct One  "<<endl;
+        
+                    }
+            system("pause");    
+            return main();  
+    }
+    else if(choice==4){
+            int pay;
+            Icecream_list();
+                cout<<setw(44)<<"  PAYMENT METHODS "<<endl<<endl;
+            cout<<setw(44)<<" 1 . cash on delivery "<<endl<<endl;
+    cout<<setw(44)<<" 2 . Paid by credit "<<endl<<endl;
+    cout<<setw(47)<<" 3 . paid by Easypaisa "<<endl<<endl;
+    
+            cout<<"Enter payment Method : ";
+            
+            cin>>pay;
+            if(pay==1){
+            cout<< "\n The payment is in :  " <<F.cash_on_delivery<<endl;
+                    }
+                    else if(pay==2){
+                        
+                        
+                        cout<< "\n The payment is in :  " <<F.Paid_by_credit<<endl<<endl;
+                        
+                        cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                        
+                    }
+                    else if (pay==3){
+                        cout<< "\n The payment is in :  " <<F.paid_by_Easypaisa<<endl;
+                            cout<<"Enter the Account user name  : ";
+                        cin>>F.FD.Account_user_name;
+                        cout<<endl;
+                        cout<<"Enter the Account number  : ";
+                        cin>>F.FD.Account_no;
+                        cout<<endl;
+                            cout<<"Amount Deducted From your Account "<<endl<<endl;
+                        cout<<"Payment Confirmed ...!!! Yo will Get Your Food Soon :) "<<endl<<endl;
+                    } 
+                    else
+                    {
+                        cout<<" Invalid option  "<<endl;
+                           cout<<" Choose Correct One  "<<endl;
+        
+                    }
+            system("pause");
+            return main();  
+    }
+    
+    else if(choice==5){
+        cout<<endl;
+                cout<<" !!!  Invalid Selection  !!! "<<endl<<endl;
+                cout<<"\n ---> Please Select Right one from the Menu List : "<<endl;
+                    cout<<setw(95)<<"_____________________________________________________________________________________"<<endl<<endl<<endl;
+                    system("pause");
+                return main () ;                    
+    }
+    
+}while(choice<5);
+
+cout<<setw(30)<<" ************* Sorry !!! We have no Other Choice **************** "<<endl;
+    
+
+    
+    return 0;
+    
+}
+void burger_list(){
+    int b;
+        cout<<setw(31)<<endl<<" ---> BURGER LIST <--- "<<endl<<endl;
+        cout<<setw(31)<<endl<<"1 . Beef Burgers =  430"<<endl<<endl;
+    cout<<setw(31)<<"2 . Elk Burgers  =  300"<<endl<<endl;
+    cout<<setw(45)<<"3 . Portobello Mushroom Burgers=  520"<<endl<<endl;
+    cout<<setw(31)<<"4 . Turkey Burgers=  280"<<endl<<endl;
+    cout<<setw(25)<<"******************************************************************************"<<endl<<endl;
+    cout<<"Select the Burger , which You want ? :   " ;
+
+        cin>>b;
+        cout<<endl;
+        if(b==1){
+            
+            int T_items;
+        
+            cout<<"your Selected  Burger is Beef Burger"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 15 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*430<<endl;
+        }
+        else if(b==2){
+            
+                int T_items;
+        
+            cout<<"your Selected  Burger is ELk Burger"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 10 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*300<<endl;
+        }
+        else if(b==3){
+                int T_items;
+        
+            cout<<"your Selected  Burger is Portobello Mushroom Burger "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*520<<endl;
+        }
+        else if(b==4){
+                int T_items;
+                
+                cout<<"your Selected  Burger is  Turkey  Burger "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*280<<endl;
+        }
+        else{
+            
+            cout<<"Sorry !!! We have No other variety :( "<<endl;
+        }
+            cout<<setw(95)<<"_____________________________________________________________________________________"<<endl<<endl<<endl;
+        
+}
+
+void pizza_list()
+{
+    
+        int c, T_items;;
+                        cout<<setw(31)<<endl<<" ---> PIZZA LIST <--- "<<endl<<endl;
+        cout<<setw(31)<<endl<<"1 . Neapolitan Pizza =  800"<<endl<<endl;
+    cout<<setw(31)<<"2 . Chicago Pizza  =  620"<<endl<<endl;
+    cout<<setw(31)<<"3 . Sicilian Pizza=  1020"<<endl<<endl;
+    cout<<setw(31)<<"4 . Greek Pizza=  1100"<<endl<<endl;
+    cout<<setw(25)<<"******************************************************************************"<<endl<<endl;
+    cout<<"Select the PIZZA, which You want ? :   " ;
+    cin>>c;
+        cout<<endl;
+        if(c==1){
+        
+        
+            cout<<"you Select Neapolitan Pizza"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 15 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*800<<endl;
+        }
+        else if(c==2){
+            
+        
+            cout<<"you Select Chicago Pizza"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 10 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*620<<endl;
+        }
+        else if(c==3){
+        
+        
+            cout<<"you Select  Sicilian Pizza "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*1020<<endl;
+        }
+        else if(c==4){
+            
+                
+                cout<<"you Select Greek Pizza "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*1100<<endl;
+        }
+        else{
+            
+            cout<<"Sorry !!! We have No other variety :( "<<endl;
+        }
+            cout<<setw(95)<<"_____________________________________________________________________________________"<<endl<<endl<<endl;
+}
+
+void milk_shakes()
+{
+    int d,T_items;
+                            cout<<setw(31)<<endl<<" ---> MILKSHAKES LIST <--- "<<endl<<endl;
+        cout<<setw(31)<<endl<<"1 . Mexican Chocolate Milkshakes =  320"<<endl<<endl;
+    cout<<setw(31)<<"2 . Bourbon Chocolate Milkshake  =  480"<<endl<<endl;
+    cout<<setw(31)<<"3 .IceCream Sandwich Milkshake=  330"<<endl<<endl;
+    cout<<setw(31)<<"4 .WhiteChocolate Raspberry Milkshake=  620"<<endl<<endl;
+    cout<<setw(25)<<"******************************************************************************"<<endl<<endl;
+    cout<<"Select the MILKSHAKE , which You want ? :   " ;
+    cin>>d;
+        cout<<endl;
+        
+            if(d==1){
+        
+        
+            cout<<"you Select  Mexican Chocolate Milkshakes"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 15 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*320<<endl;
+        }
+        else if(d==2){
+            
+        
+            cout<<"you Select Bourbon Chocolate Milkshake"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 10 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*480<<endl;
+        }
+        else if(d==3){
+        
+        
+            cout<<"you Select  IceCream Sandwich Milkshake "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*330<<endl;
+        }
+        else if(d==4){
+            
+                
+                cout<<"you Select WhiteChocolate Raspberry Milkshake "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*620<<endl;
+        }
+        else{
+            
+            cout<<"Sorry !!! We have No other variety :( "<<endl;
+        }
+            cout<<setw(95)<<"_____________________________________________________________________________________"<<endl<<endl<<endl;
+            
+}
+
+void Icecream_list()
+{
+        int  e;
+                
+            cout<<setw(31)<<endl<<" --->ICECREAM LIST <--- "<<endl<<endl;
+        cout<<setw(32)<<endl<<"1 . Chocolate icecream =  120"<<endl<<endl;
+    cout<<setw(31)<<"2 . vanilla icecream  =  130"<<endl<<endl;
+    cout<<setw(34)<<"3 . strawberry ice cream =  220"<<endl<<endl;
+    cout<<setw(31)<<"4 .Neapolitan icecream=  300"<<endl<<endl;
+    cout<<setw(25)<<"******************************************************************************"<<endl;
+    cout<<"Select the ICECREAM , which You want ? :   " ;
+
+        cin>>e;
+        cout<<endl;
+        if(e==1){
+            
+            int T_items;
+        
+            cout<<"you Selected  Chocolate icecream"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 15 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*120<<endl;
+        }
+        else if(e==2){
+            
+                int T_items;
+        
+            cout<<"you Selected  vanilla icecream"<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 10 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*130<<endl;
+        }
+        else if(e==3){
+            
+                int T_items;
+        
+            cout<<"you Selected  strawberry ice cream "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*220<<endl;
+        }
+        else if(e==4){
+            
+                int T_items;
+                
+                cout<<"you Selected  Neapolitan icecream "<<endl<<endl;
+            cout<<"Enter number of Items :  ";
+            cin>>T_items;
+            cout<<endl;
+            cout<<"Your ordered is ready with in 30 minutes "<<endl<<endl;
+            cout<<endl<<"Please Pay the Bill on Counter "<<" , your total bill is : "<<T_items*300<<endl;
+        }
+        else{
+            
+            cout<<"Sorry !!! We have No other variety :( "<<endl;
+        }
+            cout<<setw(95)<<"_____________________________________________________________________________________"<<endl<<endl<<endl;
+    
+}
+
+
+
