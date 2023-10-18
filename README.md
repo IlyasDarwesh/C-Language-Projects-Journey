@@ -1,4 +1,4 @@
-# C++-Language-Projects-Journey
+# C++ Language-Projects-Journey
  Unlock the Power of C++ with Hands-On Projects 
 
 <img alt="Coder GIF"  src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" />
