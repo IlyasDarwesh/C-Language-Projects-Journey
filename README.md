@@ -3,7 +3,8 @@
 
 <img alt="Coder GIF"  src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" />
 
-### Hey there! Welcome to C++ Language Journey Projects. This repo is a collection of simple to advanced, small and large projects. This is more than just a GitHub repository; it's your trusted companion on your exciting voyage through the world of C++ programming. Our collection is carefully curated to cater to everyone, from eager beginners to seasoned developers. Hopefully, the given codes help many of you. **HAPPY CODING!**
+ Hey there! Welcome to C++ Language Journey Projects. This repo is a collection of simple to advanced, small and large projects. This is more than just a GitHub repository; it's your trusted companion on your exciting voyage through the world of C++ programming. Our collection is carefully curated to cater to everyone, from eager beginners to seasoned developers. Hopefully, the given codes help many of you.<br>
+ **HAPPY CODING!**
 
 <br>
 
